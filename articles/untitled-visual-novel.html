@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://wrzeczak.net/styles.css">
+    <!-- TODO: <link rel="icon" href="res/favicon.ico"> -->
+
+    
+    <title>A simple visual novel</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="title">
+        <a id="clickable" style="text-decoration: none; color: var(--txt-color);" href="https://wrzeczak.net/index.html">A simple visual novel, written by me</a> 
+        <div id="subtitle">
+            <!-- <a target="_blank" href="https://youtube.com/playlist?list=PLMvnd4veS8St3PsFdQNtBvZtfq_Sq1nTo">Runs Playlist</a> -->
+            
+        </div>
+    </div>
+
+    <!-- Article Sidebar -->
+    <div id="sidebar">
+        
+        <div id="clickable" id="sb-title">
+            <a href="https://wrzeczak.net/software.html">Software Projects</a>
+        </div>
+
+        <div id="clickable" id="sb-title">
+            <a href="https://wrzeczak.net/music.html">Music Projects</a>
+        </div>
+
+        <div id="clickable" id="sb-title">
+            <a href="https://wrzeczak.net/articles/index.html">All Articles</a>
+        </div>
+    </div>
+
+    <!-- Central Aritcle View -->
+    <div id="article">
+        <p>
+            Recently I've decided to get into some form of development <i>other</i> than constantly tinkering with my website, so I decided to get back into game dev. I've gone for something simple but large: a visual novel. The basic code needed to structure the thing is not difficult, but writing and pacing the story will be, which is what makes it challenging. This will be my first real attempt at game dev in a couple years (RIP Cooky Studios, forever in my heart), and my first real project (besides the website) in about a year.
+        </p>
+        <p>
+            The game is designed to appear to be taking place on a CRT monitor, sometimes in the late 1980s. I plan on having green or amber text with some slight CRT effects (glowy text, the occasional scanline) display everything in the game, from IRC-like chats with other characters to minigames and such.
+        </p>
+        <p>
+            I'm planning on writing the "engine" for the game in <a href="https://github.com/raysan5/raylib" target="_blank">raylib</a>, and the interactions will basically emulate a custom OS used to interact with the network in the game. 
+            If I'm really crafty I make the game "open-world" in the sense that the OS is fully functional and you can progress through the story as you please, but that's a bit of a reach.
+            
+        </p>
+        <p>
+            The story takes place in late-80s Poland, following the main character Janusz. Janusz, via magic, has access to a Mazovia PC/XT clone, and through extensive modification has connected his computer to a very bootleg dial-up setup network called Dres.
+            Dres connects throughout Poland, and to a few contacts in USSR. One of these contacts, Oleg, meets Oleg on an IRC-like chatroom via Dres, and he is the character Janusz interacts with the most.
+            <br/><br/>
+        </p>
+        <p>
+            <details>
+            <summary>Click to read the story outline - <b>WARNING! Spoilers ahead, read at own risk!</b></summary>
+            Janusz begins chatting with Oleg, and they become good friends and eventually lovers. After the collapse of USSR, they decide to meet in Moscow in around March 1992 
+            (at this point, the player has no control over the story, with it switching perspectives from Janusz's current experience to the player reading his diary).
+            They meet in Moscow, have a day together, and then when walking later in the night, they step into an empty alley to have a moment. However, they are not alone, and are attacked in the alley.
+            Oleg is stabbed and dies almost immediately, Janusz runs after being sliced in the arm and escapes. He makes it home, distraught, and seriously contemplates suicide, messaging Oleg's dead account in a frantic last breath. 
+            The final choice the player makes is whether to live or die. His mother is visiting the next day, and Janusz contemplates ending his life. He writes a suicide note, and depending on the player's choice, either sends it to Oleg's account and lives, or leaves it on the computer and hangs himself, to be found by his mother.
+            </details>
+        </p>
+        <p>
+            To find the source and probably the eventual release, head to the <a href="https://github.com/wrzeczak/untitled-visual-novel/" target="_blank">game's Github page</a>. 
+            If I find that I have made a truly epic game, I might release it elsewhere (Steam? itch.io?). 
+            I'm not a "game developer," so I don't really have plans for this.
+        </p>
+    </div>
+
+    <!--
+    <footer id="sb-aligned">
+        <div style="text-align:center">
+            <a href="https://cedars.xyz/">return to the forest</a><br/>
+            <a href="https://cedars.xyz/previous">< prev</a>
+            <a href="https://cedars.xyz/next">next ></a><br/>
+            <a href="https://cedars.xyz/random">https://randint(0, 255).xyz</a>
+        </div>
+    </footer>
+    -->
+</body>
+</html>

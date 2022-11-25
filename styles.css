@@ -1,0 +1,163 @@
+/* Color Vars */
+:root {
+    --bk-color: #222; /* background color */
+    --sb-color: #333; /* sidebar color */
+    --bord-color: #555; /* border color */
+    --txt-color: rgb(189, 218, 190); /* text color */
+    --a-color: rgb(136, 156, 137);
+}
+
+/* Base Element Styles */
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bk-color);
+    color: var(--txt-color);
+    height: 100%;
+    width: 950px;
+    margin: 0 auto;
+}
+
+h4 {
+    font-style: italic;
+}
+
+hr {
+    background-color: var(--txt-color);
+    border: none;
+    height: 1px;
+}
+
+a:visited {
+    color: var(--txt-color);
+}
+
+a {
+    color: var(--txt-color);
+}
+
+a #clickable {
+    color: var(--txt-color);
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+li::before{
+    content: "-";
+}
+
+/* Base Page Styles */
+#title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 10px;
+    float: left;
+    width: 95%;
+}
+
+#subtitle {
+    font-size: 50%;
+    float: right;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+}
+
+#subtitle a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Sidebar Styles */
+#sidebar {
+    border: 3px solid var(--bord-color);
+    background-color: var(--sb-color);
+    padding: 20px;
+    
+    width: 11em;
+    float: left;
+    padding: 20px;
+}
+
+#sb-aligned {
+    float: left;
+    padding: 20px;
+}
+
+#sb-title {
+    font-size: 1.1em;
+}
+
+#sb-subtitle {
+    font-size: 1.1em;
+}
+
+#sb-list {
+    font-size: 0.9em;
+}
+
+#sb-list li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Article Styles */
+#article {
+    border: 1px dashed var(--bord-color);
+    text-align: left;
+    margin: 40px;
+    padding: 10px;
+
+    margin-top: 0px;
+    padding-top: 0px;
+    width: calc(100% - 14em - 100px);
+    float: right;
+}
+
+
+/* Misc. and Shortcut Styles */
+#centered-text {
+    text-align: center;
+    height: c
+}
+
+#right {
+    float: right;
+}
+
+#left {
+    float: left;
+}
+
+#clickable:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#clickable {
+    color: var(--txt-color);
+    text-decoration: none;
+}
+
+#blog-post-title {
+    display: inline;
+}
+
+#album-cover {
+    width: 100px;
+    height: 100px;
+}
