@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://wrzeczak.net/styles.css">
+    <!-- TODO: <link rel="icon" href="res/favicon.ico"> -->
+
+    
+    <title>ZED: A Terrible UNO Game</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="title">
+        <a id="clickable" style="text-decoration: none; color: var(--txt-color);" href="https://wrzeczak.net/index.html">ZED: A Terrible UNO Game</a> 
+        <div id="subtitle">
+            <!-- <a target="_blank" href="https://youtube.com/playlist?list=PLMvnd4veS8St3PsFdQNtBvZtfq_Sq1nTo">Runs Playlist</a> -->
+            <img src="../res/you-spin-me-round-like-a-record-round-round.gif" alt="UNO! DOS! ZED!" height=35px>&nbsp;
+            Goobisoft shudders at the thought
+        </div>
+    </div>
+
+    <!-- Article Sidebar -->
+    <div id="sidebar">
+        Written 26 May 2024.<br/><br/>
+        <div id="clickable" id="sb-title">
+            <a href="https://wrzeczak.net/articles/index.html">Return to All Articles</a>
+        </div>
+    </div>
+
+    <!-- Central Aritcle View -->
+    <div id="article">
+        <p>
+            Ubisoft's UNO game is not very good. I have set out to make a worse game.<br/><br/>
+
+            I'm building ZED (name chosen because we have UNO and DOS, and as such, should keep to three letters) because I need a fun programming project this summer and UNO is an incredibly simple game that I've so far found easy to implement. The current (as of commit 3a35124, time of writing) is not really UNO, as there are no other players and your only ability is to throw cards into the pile according to the rules of UNO, and draw cards from an infinite but poorly-shuffled deck. Here is a screenshot of the game:<br/><br/>
+            <img src="../res/zed-screenshot000.png" width="100%"><br/><br/>
+            The background scene was modelled and rendered by <a id="clickable" href="https://github.com/zach-pike" target="_blank">my friend Zach Pike</a>. The card textures were taken from <a id="clickable" href="https://opengameart.org/content/uno" target="_blank">OpenGameArt.org</a>, and I split the texture atlas up using the methods found in <a id="clickable" href="https://www.gamedev.net/tutorials/visual-arts/slicing-images-using-gimp-the-manual-and-semi-automatical-way-r5257" target="_blank">a gamedev.net article</a>.<br/>
+            The code can be found <a id="clickable" href="https://github.com/wrzeczak/zed" target="_blank">on the project's Github</a>. It only depends on <a id="clickable" href="https://raylib.com" target="_blank">Raylib</a>. If you'd like to contribute to the Makefile to support other systems, please do. I only have the ones I have because they're easy for me to test.<br/>
+            If you have an alternative tileset (ie. new deck skin) that you'd like to add I'd love to have it. So long as the files are named the same way the original set is, anything should be able to work.
+        </p>
+    </div>
+
+    <!--
+    <footer id="sb-aligned">
+        <div style="text-align:center">
+            <a href="https://cedars.xyz/">return to the forest</a><br/>
+            <a href="https://cedars.xyz/previous">< prev</a>
+            <a href="https://cedars.xyz/next">next ></a><br/>
+            <a href="https://cedars.xyz/random">https://randint(0, 255).xyz</a>
+        </div>
+    </footer>
+    -->
+</body>
+</html>

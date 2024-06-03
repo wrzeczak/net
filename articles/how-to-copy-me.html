@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://wrzeczak.net/styles.css">
+    <!-- TODO: <link rel="icon" href="res/favicon.ico"> -->
+
+    
+    <title>How to Copy my Website</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="title">
+        <a id="clickable" style="text-decoration: none; color: var(--txt-color);" href="https://wrzeczak.net/index.html">How to Copy my Website</a> 
+        <div id="subtitle">
+            <!-- <a target="_blank" href="https://youtube.com/playlist?list=PLMvnd4veS8St3PsFdQNtBvZtfq_Sq1nTo">Runs Playlist</a> -->
+            <img src="../res/grass-aesthetic.gif" alt="How it feels to be an Internet landchad" height=35px>&nbsp;
+            Take it all!
+        </div>
+    </div>
+
+    <!-- Article Sidebar -->
+    <div id="sidebar">
+        Written 11 May 2024.<br/><br/>
+        <div id="clickable" id="sb-title">
+            <a href="https://wrzeczak.net/articles/index.html">Return to All Articles</a>
+        </div>
+    </div>
+
+    <!-- Central Aritcle View -->
+    <div id="article">
+        <p>
+           <h2>Setting up the Server</h2>
+
+           Watch <a id="clickable" href="https://www.youtube.com/watch?v=OWAqilIVNgE" target="_blank">Luke Smith's video</a> on setting up the server. He's got at least two of these, and there's plenty of other resources, but I like the simplicity of this video.
+           I use Linode and Epik at Luke's recommendation. There are probably other options that are just as good, and if you can find a good deal then take it. Just be wary of what happens to your rates <i>after</i> your discount expires!
+
+           <h2>Building the Website</h2>
+
+           My website's root directory is <code>/var/www/wrz/</code>, and in there I have <code>index.html</code>, <code>bookshelf.html</code> and the <code>articles/</code> folder; the <code>articles/</code> folder has its own <code>index.html</code> and all the articles listed in one folder.
+           If you want your website to be as simple as mine, <b>take all the code from my website and put it on your server</b>. I make no copyright claim to the basic HTML and CSS that makes this stuff up; I'd appreciate if you credited me, but I won't come for you if you don't, so do what you want!
+
+           <h2>Maintaining your Website</h2>
+
+           Much like owning land, owning a website comes with maintenance obligations. Servers are typically charged monthly, and domain registrations charged yearly, though anybody with a job can <i>hopefully</i> afford to maintain them. If you can't pay your server costs, make sure you keep a backup; I like to push all of the contents of my website onto GitHub every once in a while. This is so that if you do regain the means to keep your stuff up, you can get it back running quickly.
+           What you post on your website is up to you; the only people regulating you are probably your server host and the Feds, and server hosts <i>generally</i> tend to only take stuff down when the Feds order them to. This is different in different countries. I like to post articles occasionally, or stuff about myself like my bookshelf. Throw some details into it, spend some time collecting funny gifs, mess with the colors. I use my web server as a file server sometimes. I even have <a id="clickable" href="https://wrzeczak.net/stolow/index.html" target="_blank">an entirely separate website hosted on this same server and domain</a> that I built for a mock US government simulator; feel free to take the code from there too, especially the drop-down boxes.<br/>
+           The point <i>is</i> to do what you want! You don't have to tell your employer, or anyone in your real life what you post or even that you post on your own website, hopefully. 
+        </p>
+    </div>
+
+    <!--
+    <footer id="sb-aligned">
+        <div style="text-align:center">
+            <a href="https://cedars.xyz/">return to the forest</a><br/>
+            <a href="https://cedars.xyz/previous">< prev</a>
+            <a href="https://cedars.xyz/next">next ></a><br/>
+            <a href="https://cedars.xyz/random">https://randint(0, 255).xyz</a>
+        </div>
+    </footer>
+    -->
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* COLORS! YIPPEE! */
+
+:root {
+	--bk-color: #222;				/* background color */
+	--txt-color: #eee;				/* text color */
+	--logo-main-color: #ff3334;		/* main logo color */
+	--logo-secn-color: #2211ff;		/* secondary logo color */
+}
+
+/* BASE ELEMENTS */
+
+body {
+	background-color: var(--bk-color);
+	color: var(--txt-color);
+	height: 100%;
+	width: 70%;
+	margin: 1rem auto;
+
+
+	font-family: Georgia, Georgia, serif;
+	font-size: 16px;
+}
+
+/* GENERAL STYLE ITEMS */
+
+#centered {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+/* FRONT-AND-CENTER LOGO ITEMS */
+
+.logo-box {
+	font-size: 32px;
+	font-weight: bold;
+	margin: 1rem auto;
+}
+
+#logo-main {
+	color: var(--logo-main-color);
+}
+
+/* FOR THE INTRODUCTION SECTION */
+
+.introduction {
+	margin: 2rem auto;
+}
+
+/* FOR THE COLLAPSIBLE MONTHS */
+
+.month {
+	background-color: var(--bk-color);
+	color: var(--txt-color);
+	padding: 0 auto;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	font-family: Georgia, Georgia, serif;
+}
+
+.active, .collapsible:hover {
+	background-color: var(--bk-color);
+}
+
+.month-content {
+	padding: 0 auto;
+	display: none;
+	overflow: hidden;
+	background-color: var(--bk-color);
+}
+
+.month-title {
+	display: inline;
+}
+
+.month-post-date {
+	display: inline;
+	font-size: 14px;
+	font-style: italic;
+}

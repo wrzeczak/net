@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://wrzeczak.net/styles.css">
+    <!-- TODO: <link rel="icon" href="res/favicon.ico"> -->
+
+    
+    <title>My C Compilation Setup</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="title">
+        <a id="clickable" style="text-decoration: none; color: var(--txt-color);" href="https://wrzeczak.net/index.html">My C Compilation Setup</a> 
+        <div id="subtitle">
+            <!-- <a target="_blank" href="https://youtube.com/playlist?list=PLMvnd4veS8St3PsFdQNtBvZtfq_Sq1nTo">Runs Playlist</a> -->
+            <img src="../res/mercy.gif" alt="I bestow this upon ye" height=35px>&nbsp;
+            It's as shrimple as that
+        </div>
+    </div>
+
+    <!-- Article Sidebar -->
+    <div id="sidebar">
+        Written 11 May 2024.<br/><br/>
+        <div id="clickable" id="sb-title">
+            <a href="https://wrzeczak.net/articles/index.html">Return to All Articles</a>
+        </div>
+    </div>
+
+    <!-- Central Aritcle View -->
+    <div id="article">
+        <p>
+            To compile C code on Windows, I've found there are generally two good toolsets to use; either Visual Studio, or a newer tool called <a id="clickable" href="https://github.com/skeeto/w64devkit">w64devkit</a>. I'll discuss each in some more detail below this, though I will note I don't currently use Visual Studio.
+            <br/>
+            <h2><a id="clickable" href="https://github.com/skeeto/w64devkit">w64devkit</a></h2>
+            <br/>
+            <a id="clickable" href="https://github.com/skeeto/w64devkit">w64devkit</a> is basically a replacement for the MINGW toolset, which is a toolset that tries to emulate the standard Linux toolset, on Windows. I've always found MINGW (and its relation CYGWIN) to be clunky, slow, and not really very functional; maybe I'm stupid, but I've never gotten it to work right on my machine.<br/>
+            <a id="clickable" href="https://github.com/skeeto/w64devkit">w64devkit</a> solves these problems by seemingly automagically setting up a MINGW toolset in a folder with a Docker image. I'd never used Docker before installing it, and I deleted Docker after installation (it doesn't depend on it to run, just to install, which is the great thing). The setup took about half an hour on my machine, which is standard according to the developers. I got it to work very easily in Visual Studio Code after adding it do my Windows PATH, and have been satisfied ever since. The only thing I've noticed so far is that Visual Studio's Intellisense doesn't really like it all that much, though I'm told that's a configuration error on my end. <b>If you are looking to compile C code on Windows, <a id="clickable" href="https://github.com/skeeto/w64devkit"><u>this</u></a> is probably your best option</b>.
+            <br/>
+            <h2>Visual Studio</h2>
+            <br/>
+            Visual Studio is Microsoft's big development suite of applications and toolboxes. It's designed to run on Windows natively and is actually its own compiler, not gcc like w64devkit. It works fine, as it should. It's in my experience a little slow (though my machine isn't particularly powerful), especially Visual Studio, the application and code editor. It's frustratingly not very well integrated with library management, however. vcpkg is their library management tool, but not everything is on there and even then I've found it to be sometimes unreliable, especially outside of Visual Studio. However, I did like to use their GitHub integration when I was working on a C++ project with 2-3 other programmers. It was very clean and quick and I didn't need to understand how GitHub worked at all to start, which was nice until I hit a merge conflict and had no idea what to do (not Visual Studio's fault). This is a good option if you're looking for an integrated development environment, and if you're an eighth grader trying to collobrate with people with no clue what you're doing (like I was!).
+        </p>
+    </div>
+
+    <!--
+    <footer id="sb-aligned">
+        <div style="text-align:center">
+            <a href="https://cedars.xyz/">return to the forest</a><br/>
+            <a href="https://cedars.xyz/previous">< prev</a>
+            <a href="https://cedars.xyz/next">next ></a><br/>
+            <a href="https://cedars.xyz/random">https://randint(0, 255).xyz</a>
+        </div>
+    </footer>
+    -->
+</body>
+</html>
