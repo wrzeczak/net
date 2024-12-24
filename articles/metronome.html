@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://wrzeczak.net/styles.css">
+    <!-- TODO: <link rel="icon" href="res/favicon.ico"> -->
+
+    
+    <title>WRZ: Metronome</title>
+</head>
+<body>
+    <!-- Header -->
+    <div id="title">
+        <a id="clickable" style="text-decoration: none; color: var(--txt-color);" href="https://wrzeczak.net/index.html">WRZ: Metronome</a> 
+        <div id="subtitle">
+            <!-- <a target="_blank" href="https://youtube.com/playlist?list=PLMvnd4veS8St3PsFdQNtBvZtfq_Sq1nTo">Runs Playlist</a> -->
+            <img src="../res/shiner-shiner-bock.gif" alt="BEER!!!" height=35px>&nbsp;
+            A basic metronome app
+        </div>
+    </div>
+
+    <!-- Article Sidebar -->
+    <div id="sidebar">
+        Written 1 August 2024.<br/><br/>
+        <div id="clickable" id="sb-title">
+            <a href="https://wrzeczak.net/articles/index.html">Return to All Articles</a>
+        </div>
+    </div>
+
+    <!-- Central Aritcle View -->
+    <div id="article">
+        <p>
+            Over the last few days I've been writing a basic metronome app; this is one of the first major programming projects since when I built this website that I've actually got a working product almost done. I'm pretty proud of it and I'd like to share!<br/>
+            <br/>
+            The link to the GitHub repo can be found <a id="clickable" href="https://github.com/wrzeczak/metronome">here</a>. The project is written in pure C, including the one dependency, Raylib (with Raygui). I won't rehash the README of the repo, so I'll just describe it as basically functional. You can set an arbitrary tempo in multiple easy ways, set subdivisions, and change the sound that plays when you click. The program will save your configuration of sounds, and in this configuration you can also set the paths to the Raygui style you want to use, and the directory you want to program to source sounds from. <br/>
+            The biggest problem I've encountered is the text input box for setting the tempo precisely. I think I can solve this problem by separating my data a little better, but for now the text input is janky, though functional once you learn its quirks.
+        </p>
+    </div>
+
+    <!--
+    <footer id="sb-aligned">
+        <div style="text-align:center">
+            <a href="https://cedars.xyz/">return to the forest</a><br/>
+            <a href="https://cedars.xyz/previous">< prev</a>
+            <a href="https://cedars.xyz/next">next ></a><br/>
+            <a href="https://cedars.xyz/random">https://randint(0, 255).xyz</a>
+        </div>
+    </footer>
+    -->
+</body>
+</html>
